@@ -130,6 +130,8 @@ def main(fn="test.xls"):
     requirements = generate_requirements(xls)
 
     p = plan(resources, requirements)
+    return p
+
     p.sort(key=lambda x: (x[1], x[0]))
     p.sort()
     for a, b, c in p:

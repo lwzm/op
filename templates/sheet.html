@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{# vim:se filetype=html.tornadotmpl: #}
+<meta charset=utf-8>
+<link href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css" rel="stylesheet">
+
+
+<table class="pure-table">
+    <thead>
+        <tr>
+            {% for i in thead %}
+            <th>{{ i }}</th>
+            {% end %}
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for row in tbody %}
+        <tr>
+            {% for i in row %}
+            <td>{{ i }}</td>
+            {% end %}
+        </tr>
+        {% end %}
+    </tbody>
+</table>
